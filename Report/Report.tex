@@ -1,0 +1,80 @@
+\documentclass[11pt]{article}
+\usepackage{amssymb}
+\usepackage{algorithm}  
+\usepackage{algpseudocode}  
+\usepackage{amsmath}  
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}  % Use Input in the format of Algorithm  
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\parindent=22pt
+\parskip=3pt
+\oddsidemargin 18pt \evensidemargin 0pt
+\leftmargin 1.5in
+\marginparwidth 1in \marginparsep 0pt \headsep 0pt \topskip 20pt
+\textheight 225mm \textwidth 148mm
+\renewcommand{\baselinestretch}{1.15}
+\begin{document}
+\title{{\bf Final Course Report}}
+\author{3190102721 Xu Shengze}
+\date{}
+\maketitle
+
+\section{Review}
+
+\qquad First of all, I would like to review the main contents of what we have learned in the sixteen classes this semester. In this semester's Quantum Information and Quantum Computing course, we have studied seven main chapters, which can be roughly divided into two parts: classical computing and quantum computing.
+
+We learned about Turing machines in the first chapter, and I was inspired by their theorems and the ``multi-pronged" approach in the exercises. I remember I designed my own algorithms for my first assignment, such as using two Turing machines to assist each other in Problem 1.3, the definition of $X_0$ and $X_1$ in Problem 1.4, and the multiple Turing machines in Problem 1.7, etc.
+
+In the third chapter on the NP problem, the book gives a different definition of the NP problem, with the help of a Turing machine that gives an explanation of whether a predicate L belongs to the class NP. In this section, I was very impressed with Arthur and Merlin's approach, which I found very novel and interesting, and its role in the solution of Problem 3.9 cannot be ignored.
+
+This method has not been taught in other courses and the ideas behind it are very new. First of all, we have Arthur and Merlin. If we compare Arthur to an ordinary computer, then Merlin is an excellent assistant to it, and Merlin will tell Arthur what he knows. Because Merlin may ``lie", Arthur needs to personally check whether Merlin's words are true or not. At the same time, Merlin also understands this, so he will choose the appropriate certificate to tell Arthur, so that Arthur can determine the answer to the question in polynomial time after seeing the prompt.
+
+If for any type of input to the problem, Merlin has a way to find a suitable problem-solving hint and tell Arthur so that the latter can determine the answer to the problem in polynomial time, then the problem is said to be NP.
+
+In Chapters 4 and 5 we delve more deeply into the theory of computational complexity around the BPP problem. After the section on classical computing we study the most preliminary part of quantum computing in Chapters 6 and 7, where the professor's exposition on quantum bits and quantum gates helps me a lot in understanding many concepts in the later part of the report.
+
+\section{Some Topics}
+\qquad The following are a few topics related to the course, which were also mentioned in the course but not explored in depth, so I have selected a few points of more interest to explore.
+\subsection{Quantum Computers}
+\qquad This section is one of the parts that I am usually interested in, but I don't know much about, so I will take this opportunity to explore it in some depth.
+
+Compared with classical computers, quantum computers have remarkable performance improvements, so naturally they have many differences compared with traditional computers. First of all, they have different structures. The former takes up little space and can be used at room temperature, while the latter is mainly divided into three parts: quantum chip, control system, and cryogenic system, which are very large and need to build a special site. Secondly, the two operating principles are different. A classical bit can only represent two states of $0$ or $1$, while quantum bits have superposition characteristics. For $N$ quantum bits, it can represent $2^N$ states, while the former can only represent $N$ of them, which is an important reason why quantum computing can significantly increase the speed of computing.
+
+Quantum computing is like performing fast operations in the form of crazy parallel events. For some optimization problems that may take hundreds of millions of years for classical calculations, quantum computing is able to return the answer in a short time while trying an infinite number of possible routes at the same time. So if it is just ``1+1=?" Quantum computers are not much better than this simple operation.
+
+But then again, even if humans do develop a large general-purpose quantum computer in the future, the algorithms applicable to quantum computers are currently very limited, and there are still many problems with very complex computational theories that even quantum computers are unable to solve.
+\subsection{Quantum Machine Learning}
+\qquad Machine learning is one of the very hot topics in recent years. Professor Wu talked in class about the machine learning algorithms that have also been implemented by quantum computing at present, and I was very surprised to hear that at that time, I did not expect that it has been developed to such an advanced stage at present.
+
+For an N-dimensional vector, compared to the classical theory where $N$ bits can be represented, only $\log(N)$ are needed by virtue of the quantum bit theory. Since a quantum bit can be in a superposition of $|0>$ and $|1>$ states and have coherence with each other, multiple quantum bits can be entangled together to represent more complex states. Therefore, quantum algorithms can be used and improved for machine learning and even various other classical problems.
+
+With the advent of the big data era, electronic data is exploding, limited by the size of the chip classical computer computing speed is very little room for improvement, machine learning and other big data analysis tasks in the future may face huge challenges, and the significance of quantum technology at this time is self-evident.
+
+The development of QML also faces a lot of challenges. On the input and output side we need to think about how to map classical data back and forth, and on the costing side the algorithm needs the number of gates. Most importantly, whether the performance of a quantum algorithm is indeed superior. Most of these topics and the problems they pose are in the fetal stage, and the process of exploration is very exciting and certainly very difficult.
+\section{Outlook}
+\subsection{Comparison}
+\qquad Combinatorial Optimization is another course I am taking this semester, and the knowledge taught in it by Mr. Tanzhiyi has a lot of intersection with this course, including topics such as NP problems and computational complexity. However, the starting points of these problems in the two courses are very different, and I got some inspiration from the comparison.
+
+The format of this course is very new and the structure of the course is very different from most courses in the first three years of college. Because of the large span of knowledge, I believe that for most students, including myself, it will take some adaptation process.
+\subsection{Suggestion}
+\qquad First of all, I think the teacher can appropriately increase the amount of homework in the course, and the form of homework need not be limited to after-class exercises, but can take the form of listening to a certain lecture or studying a certain paper to enhance the students' understanding of the concepts in the course. 
+
+Secondly, since the knowledge system of the course is relatively new and covers a wide range of topics, it is advisable to adopt some open teaching methods, such as having students report in small groups, which adds interest on the one hand and facilitates mutual learning among different groups on the other.
+
+Finally, I would like to thank the teachers and teaching assistants for your hard work throughout the semester!
+
+\section{References}
+[1] Zhang Huanguo, Mao Shaowu, Wu Wanqing, Wu shuomi, Liu Jinhui, Wang Houzhen, Jia Jianwei. A review of complexity theory of quantum computing [J] Journal of computer science, 2016,39 (12): 2403-2428
+
+\noindent[2] Wu Guolin, Huang Lingyu. Computational complexity, quantum computing
+and its philosophical significance [J] Research on Dialectics of nature, 2007 (01): 22-26
+DOI:10.19484/j.cnki. 1000-8934.2007.01.006.
+
+\noindent[3] Quantum computing meets big data challenges: China University of Science and Technology realizes quantum machine learning algorithm for the first time. 
+
+\noindent http://quantum.ustc.edu.cn/web/index.php/node/122
+
+\noindent[4] When quantum physics meets machine learning: Quantum Machine Learning 
+
+\noindent https://zhuanlan.zhihu.com/p/57077752
+
+\end{document}
